@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="700.0" prefWidth="800.0" stylesheets="@StyleTarea.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.unaplanilla.controller.MantenimientoCoopController">
+   <children>
+      <StackPane layoutX="25.0" layoutY="151.0" prefHeight="700.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane>
+               <center>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0" styleClass="jfx-stCarnet">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="148.0" prefWidth="800.0">
+                           <children>
+                              <Label styleClass="jfx-textos-label" stylesheets="@StyleTarea.css" text="Encabezado:">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <MFXTextField fx:id="txfNombreCoop" alignment="CENTER" floatMode="BORDER" floatingText="Escribe aqui el Nombre de la Coooperativa" floatingTextGap="0.0" prefHeight="40.0" prefWidth="400.0">
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </MFXTextField>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="189.0" prefWidth="599.0" spacing="10.0" stylesheets="@StyleTarea.css">
+                                 <children>
+                                    <ImageView fx:id="imgvLogoCoop" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <MFXButton fx:id="btnSeleccionarLogo" onAction="#onActionBtnSeleccionarLogo" prefHeight="51.0" prefWidth="173.0" styleClass="mfx-BtnSelecionarLogo" stylesheets="@StyleTarea.css" text="Seleccionar Logo">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </HBox.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </MFXButton>
+                              <MFXButton fx:id="btnGuardar" onAction="#onActionBtnGuardar" styleClass="mxf-BtnGuardar" stylesheets="@StyleTarea.css" text="Guardar Encabezado y Logo">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </HBox.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </MFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </center>
+               <top>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="85.0" prefWidth="786.0" styleClass="jfx-stCarnet">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="500.0" styleClass="jfx-titulo-label" stylesheets="@StyleTarea.css" text="MANTENIMIENTO DE COOPERATIVA" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </top>
+            </BorderPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

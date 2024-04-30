@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" stylesheets="@StyleTarea.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.unaplanilla.controller.CameraController">
+   <children>
+      <VBox alignment="CENTER" layoutX="400.0" layoutY="158.0" prefHeight="700.0" prefWidth="800.0" styleClass="jfx-stCarnet" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="566.0" prefWidth="800.0" styleClass="jfx-LabelCarnet">
+               <children>
+                  <ImageView fx:id="PrevistaFoto" fitHeight="350.0" fitWidth="392.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="FotoTomada" fitHeight="350.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="135.0" prefWidth="800.0" spacing="50.0" styleClass="jfx-LabelCarnet">
+               <children>
+                  <MFXButton fx:id="btnTomarFoto1" onAction="#onActionTomarFoto1" prefHeight="40.0" prefWidth="170.0" styleClass="mfx-BtnTomarFoto" stylesheets="@StyleTarea.css" text="Tomar Foto">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </MFXButton>
+                  <MFXButton fx:id="btnTomarOtraVez" onAction="#onActionTomarOtraVez" prefHeight="29.0" prefWidth="160.0" styleClass="mfx-BtnCambiarFoto" stylesheets="@StyleTarea.css" text="Tomar otra vez">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </MFXButton>
+                  <MFXButton fx:id="btnGuardar1" onAction="#onActionGuardar1" prefHeight="40.0" prefWidth="128.0" styleClass="mxf-BtnGuardar" stylesheets="@StyleTarea.css" text="Guardar">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </MFXButton>
+                  <MFXButton fx:id="btnSalirCamara" onAction="#onActionSalirCamara" prefHeight="40.0" prefWidth="119.0" styleClass="mfx-BtnSalir" stylesheets="@StyleTarea.css" text="Salir">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </MFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,333 @@
+*{
+    -fx-base-color-focus: #09b6bc;
+    -fx-base-color-unfocus:#4d4d4d;
+    -fx-base-color-etiquetas:#bcbcbc;
+    -fx-base-color-titulos:#51b6cd;
+    -fx-base-color-error:#D34336;
+    -fx-base-color-id:#00C853;
+    -fx-base-color-highlight:#ccffcc;
+    -mfx-purple: -fx-base-color-focus;
+    -fx-base-color-spinner:  #ffff33;
+    
+}
+/**FONDOS*/
+
+.jfx-fondoUsuarios {
+    -fx-background-color: #ffff00;
+    -fx-opacity: 0.8;
+    -fx-padding: 10px; 
+}
+.jfx-ImagenFondoUsuarios {
+    -fx-image: url("../resources/FondoUsuarios.jpeg");
+}
+
+.jfx-BorderPaneAsociados{
+    -fx-background-image: url("../resources/FondoAsociados.jpg");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.jfx-BorderPaneProfesores{
+    -fx-background-image: url("../resources/FondoProfesores.jpg");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.jfx-BorderPaneDetallado{
+    -fx-background-image: url("../resources/FondoDetallado.jpeg");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.jfx-BorderPaneFuncionarios{
+    -fx-background-image: url("../resources/FondoFuncionarios.jpg");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+
+
+/**BOTONES**/
+.button{
+  -fx-padding: 10px;
+  -fx-font-size: 10pt; /* Cambiar a pt */
+  -fx-text-transform: uppercase;
+  -fx-letter-spacing: 2.5px;
+  -fx-font-weight: 500;
+  -fx-transition: all 0.3s ease 0s;
+  -fx-cursor: HAND;
+  -fx-outline: none;
+  -fx-font-weight: bold;
+  -fx-font-family:  "Trebuchet MS", sans-serif;
+}
+
+.button,.button:armed,.button:focused{
+  -fx-text-fill: #000; /* Cambiar de -fx-color a -fx-text-fill */
+  -fx-background-color: #ffff66;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.39), 0, 8, 0, 15);
+  -fx-background-radius: 20; /* Establece el radio de borde del fondo del botón */
+  -fx-border-radius: 20; 
+  
+}
+
+.button:hover {
+  -fx-background-radius: 20; /* Establece el radio de borde del fondo del botón */
+  -fx-border-radius: 20; 
+  -fx-background-color: #23c483;
+  -fx-effect: dropshadow(gaussian, rgba(24, 119, 82, 1), 0, 15, 0, 20);
+  -fx-text-fill: #fff; /* Cambiar de -fx-color a -fx-text-fill */
+  -fx-translate-y: -7; /* Cambiar de transform a translate-y */
+}
+
+.button:active {
+  -fx-translate-y: -1;  
+}
+
+/**HOVER DE IMAGEN **/
+.HBox-hover:hover {
+    -fx-border-color: #66ff66; /* Cambia el color del borde a rojo */
+    -fx-border-width: 3px;
+}
+
+
+
+/**IMAGENES PREDETERMINADAS**/
+.jfx-spImpresionCarnet > ImageView{
+    -fx-image: url("../resources/fondoCarnet.png");
+}
+    
+.jfx-vbLogoCoop > ImageView{
+    -fx-image: url("../resources/TuLogoAqui.png");
+}
+
+.jfx-vbImagenAsoDefecto > ImageView{
+    -fx-image: url("../resources/UsuarioDeterminado.jpg");
+}
+
+
+/**IMAGENES DE BOTONES**/
+
+.mfx-BtnProfesores > ImageView{-fx-image: url('../resources/IconoProfesor.png');}
+
+.mfx-BtnFuncionarios > ImageView {-fx-image: url('../resources/IconoFuncionario.png')}
+
+.mfx-BtnAsociados > ImageView {-fx-image: url('../resources/IconoEstudiante.png')}
+
+.mfx-BtnAceptar > ImageView {-fx-image: url('../resources/IconoCheck.png')}
+
+.mfx-BtnDepositar > ImageView {-fx-image: url('../resources/IconoChanchito.png')}
+
+.mfx-BtnTomarFoto > ImageView {-fx-image: url('../resources/IconoCamara.png')}
+
+.mfx-BtnRegistrar > ImageView {-fx-image: url('../resources/IconoRegistrar.png')}
+
+.mfx-BtnMantenimientoCuentas > ImageView {-fx-image: url('../resources/IconoMantenimiento.png')}
+
+.mfx-BtnParametrizar > ImageView {-fx-image: url('../resources/IconoConfiguracion.png')}
+
+.mfx-BtnSalir > ImageView {-fx-image: url('../resources/IconoX.png')}
+
+.mfx-BtnAgregar > ImageView {-fx-image: url('../resources/IconoAgregar.png')}
+
+.mfx-BtnEditar > ImageView{-fx-image: url('../resources/IconoEditar.png');}
+
+.mfx-BtnEliminar > ImageView{-fx-image: url('../resources/IconoEliminar.png');}
+
+.mfx-BtnGuardar > ImageView {-fx-image: url('../resources/IconoGuardar.png')}
+
+.mfx-BtnSelecionarLogo > ImageView {-fx-image: url('../resources/IconoLupa.png')}
+
+.mxf-BtnGuardar > ImageView {-fx-image: url('../resources/IconoGuardar.png')}
+
+.mfx-BtnCambiarFoto > ImageView {-fx-image: url('../resources/IconoCambiar.png')}
+
+.mfx-BtnTomarFoto > ImageView {-fx-image: url('../resources/IconoCamara.png')}
+
+.mfx-BtnIngresar > ImageView {-fx-image: url('../resources/IconoIngresar.png')}
+
+.mfx-BtnImprimirCarnet > ImageView {-fx-image: url('../resources/IconoImpresora.png')}
+
+.mfx-BtnCambiarFoto > ImageView {-fx-image: url('../resources/IconoCambiar.png')}
+
+.mfx-BtnMantenimientoAso > ImageView {-fx-image: url('../resources/IconoMantenimientoAso.png')}
+
+.mfx-BtnCarnet > ImageView {-fx-image: url('../resources/IconoCarnet.png')}
+
+.mfx-BtnCambiarFoto > ImageView {-fx-image: url('../resources/IconoCambiar.png')}
+
+.mfx-BtnAperturaCuentas > ImageView {-fx-image: url('../resources/IconoCambiar.png')}
+
+.mfx-BtnRetiroDep > ImageView {-fx-image: url('../resources/IconoCaja.png')}
+
+.mfx-BtnMostrar > ImageView {-fx-image: url('../resources/IconoMostrar.png')}
+
+.mfx-BtnEstadoCuenta > ImageView {-fx-image: url('../resources/IconoEstado.png')}
+
+.mfx-BtnBuzon > ImageView {-fx-image: url('../resources/IconoBuzon.png')}
+
+.mfx-BtnDetallado > ImageView {-fx-image: url('../resources/IconoDetallado.png')}
+
+.mfx-BtnBarrer > ImageView {-fx-image: url('../resources/IconoBarrer.png')}
+
+.mfx-BtnPlay > ImageView {-fx-image: url('../resources/IconoPlay.png')}
+
+.mfx-BtnJuego > ImageView {-fx-image: url('../resources/IconoJuego.png')}
+
+
+/**IMAGENES DE DINERO**/
+
+.jfx-HBoxMil > ImageView{
+    -fx-image: url('../resources/MIl.jpg')
+}
+
+.jfx-HBoxDosMIl > ImageView{
+    -fx-image: url('../resources/DosMil.jpg')
+}
+.jfx-HBoxCincoMil > ImageView{
+    -fx-image: url('../resources/CincoMil.jpg')
+}
+
+.jfx-HBoxDiezMil > ImageView{
+    -fx-image: url('../resources/DiezMIl.jpg')
+}
+
+.jfx-HBoxVeinteMil > ImageView{
+    -fx-image: url('../resources/VeinteMIl.jpg')
+}
+
+.jfx-HBoxCinco > ImageView{
+    -fx-image: url('../resources/MonedaCinco.png')
+}
+
+.jfx-HBoxDiez > ImageView{
+    -fx-image: url('../resources/MonedaDiez.png')
+}
+
+.jfx-HBoxVeinticinco > ImageView{
+    -fx-image: url('../resources/MonedaVeinticinco.jpg')
+}
+
+.jfx-HBoxCincuenta > ImageView{
+    -fx-image: url('../resources/MonedaCincuenta.png')
+}
+
+.jfx-HBoxCien > ImageView{
+    -fx-image: url('../resources/MonedaCien.png')
+}
+
+.jfx-HBoxQuinientos > ImageView{
+    -fx-image: url('../resources/MonedaQuinientos.png')
+}
+
+
+
+
+
+/**DISENO DE LABEL**/
+*{
+    -fx-base-color-unfocus:#4d4d4d;
+    -fx-base-color-etiquetas:#bcbcbc;
+    -fx-base-color-titulos:#ffff33;
+    -fx-base-color-textos:#000000;
+}
+
+.jfx-LabelCarnet{
+     -fx-font-size: 15px;
+     -fx-text-fill: -fx-base-color-titulos;
+     -fx-font-weight: bold;
+     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6),2,0.0,1,2);
+     -fx-font-family:  "Trebuchet MS", sans-serif;
+     -fx-background-color: #ff9966;
+     -fx-border-color: #ffff33; /* Color del borde */
+    -fx-border-width: 2px; /* Ancho del borde */
+    -fx-border-radius: 5px;  
+    -fx-background-radius: 8;
+    
+}
+
+.jfx-titulo-label{
+    -fx-font-size: 25px;
+    -fx-text-fill: -fx-base-color-titulos;
+    -fx-font-weight: bold;
+    -fx-padding: 5 0 5 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6),2,0.0,1,2);
+    -fx-font-family:  "Trebuchet MS", sans-serif;
+    -fx-text-stroke: -fx-base-color-textos; /* Color del borde */
+    -fx-stroke-width: 10px;
+    -fx-background-color: #ff9966;
+    -fx-border-color: #ffff33; /* Color del borde */
+    -fx-border-width: 3px; /* Ancho del borde */
+    -fx-border-radius: 5px;  
+    -fx-background-radius: 8;
+    
+}
+
+.jfx-textos-label{
+    -fx-font-size: 15px;
+    -fx-text-fill: -fx-base-color-textos;
+    -fx-font-weight: bold;
+    -fx-padding: 5 0 5 0;
+    -fx-font-family:  "Trebuchet MS", sans-serif;
+}
+
+
+/**TEXT FIELDS**/
+
+.mfx-text-field{
+    -mfx-float-mode: BORDER;
+    -fx-font-size: 14.0px;
+    -fx-alignment: TOP_LEFT;
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: -fx-base-color-etiquetas;
+}
+
+
+.mfx-text-field .text-field {
+    -fx-highlight-fill: -fx-base-color-highlight;
+}
+
+.mfx-text-field .text-field:focused {
+    -fx-background-color: #ccffff; /* Color de fondo cuando el TextField está enfocado */
+}
+
+.mfx-text-field:floating .floating-text {
+    -fx-font-weight: bold;
+}
+
+/**SOMRA CARNET**/
+.jfx-stCarnet {
+-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6),20,0.0,0,0);
+}
+
+
+.spinner{
+    
+     -fx-background-color: #ff9966; /* Cambia el color de fondo del spinner */
+    -fx-border-color:  #ffff33; /* Cambia el color del borde del spinner */
+    -fx-border-width: 4px; /* Cambia el ancho del borde */
+/*    -fx-border-radius: 2px;  Cambia el radio de esquinas del borde 
+    */
+}
+
+.spinner .increment-arrow-button, .spinner .decrement-arrow-button {
+    -fx-background-color: #ccffcc; /* Cambia el color de fondo de los botones */
+    -fx-shape: "M 0 0 L 5 5 L 10 0 Z"; /* Cambia la forma de la flecha */
+}
+
+
+.spinner .increment-arrow-button{
+    -fx-background-color: #ccffcc; /* Cambia el color de fondo de los botones */
+    -fx-shape: "M 0 0 L 5 5 L 10 0 Z"; /* Cambia la forma de la flecha */
+    -fx-rotate: 180; 
+}
+
+
+
+
+
+
+

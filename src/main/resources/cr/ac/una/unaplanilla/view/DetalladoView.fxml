@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="800.0" prefWidth="900.0" stylesheets="@StyleTarea.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.unaplanilla.controller.DetalladoController">
+   <children>
+      <BorderPane prefHeight="785.6" prefWidth="800.0" stylesheets="@StyleTarea.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <BorderPane prefHeight="700.0" prefWidth="800.0">
+               <center>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0" styleClass="jfx-stCarnet" BorderPane.alignment="CENTER">
+                     <children>
+                        <StackPane id="StackPaneDetallado" fx:id="StackPaneDetallado" prefHeight="430.0" prefWidth="823.0">
+                           <children>
+                              <VBox alignment="CENTER">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="60.0">
+                                       <children>
+                                          <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="300.0" spacing="10.0">
+                                             <children>
+                                                <Label styleClass="jfx-textos-label" text="Nombre:" />
+                                                <Label fx:id="lblNombre" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" styleClass="jfx-LabelCarnet" />
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="300.0" spacing="10.0">
+                                             <children>
+                                                <Label styleClass="jfx-textos-label" text="Apellido:" />
+                                                <Label fx:id="lblApellido" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" styleClass="jfx-LabelCarnet" />
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="300.0" spacing="10.0">
+                                             <children>
+                                                <Label styleClass="jfx-textos-label" text="Edad:" />
+                                                <Label fx:id="lblEdad" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" styleClass="jfx-LabelCarnet" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="330.0" prefWidth="757.0">
+                                       <children>
+                                          <TableView fx:id="tblVDetallado" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="330.0" prefWidth="806.0" />
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </StackPane>
+                        <HBox alignment="CENTER" prefHeight="157.0" prefWidth="839.0" spacing="60.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                                 <children>
+                                    <MFXTextField fx:id="txfFolio" floatMode="BORDER" floatingText="Ingrese su Folio de nuevo" />
+                                    <MFXButton fx:id="btnBuscar" onAction="#OnActionBtnBuscar" styleClass="mfx-BtnSelecionarLogo" stylesheets="@StyleTarea.css" text="Buscar">
+                                       <graphic>
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                                       </graphic>
+                                    </MFXButton>
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </VBox>
+                              <Pane prefHeight="200.0" prefWidth="200.0" />
+                              <MFXButton fx:id="btnImprimirPDF" onAction="#OnActionBtnImprimirPDF" styleClass="mfx-BtnImprimirCarnet" stylesheets="@StyleTarea.css" text="Imprimir PDF">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </MFXButton>
+                              <MFXButton fx:id="btnSalir" layoutX="10.0" layoutY="10.0" onAction="#OnActionBtnSalir" styleClass="mfx-BtnSalir" stylesheets="@StyleTarea.css" text="Salir">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </MFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="30.0" right="30.0" top="50.0" />
+                     </padding>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </center>
+         <top>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="85.0" prefWidth="800.0" styleClass="jfx-stCarnet">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="500.0" styleClass="jfx-titulo-label" stylesheets="@StyleTarea.css" text="DETALLE DE CUENTAS" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

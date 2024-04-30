@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="620.0" stylesheets="@StyleTarea.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.unaplanilla.controller.UsuariosController">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView id="imgFondoUsuarios" fx:id="imgFondoUsuarios" fitHeight="398.0" fitWidth="599.0" pickOnBounds="true" styleClass="jfx-ImagenFondoUsuarios" />
+            <VBox alignment="TOP_CENTER" prefHeight="373.0" prefWidth="578.0" spacing="30.0">
+               <children>
+                  <MFXButton fx:id="btnProfesores" onAction="#OnActionBtnProfesores" styleClass="mfx-BtnProfesores" stylesheets="@StyleTarea.css" text="Profesores">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic></MFXButton>
+                  <MFXButton fx:id="btnFuncionarios" onAction="#OnActionBtnFuncionarios" styleClass="mfx-BtnFuncionarios" stylesheets="@StyleTarea.css" text="Funcionarios">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic></MFXButton>
+                  <MFXButton fx:id="btnAsociados" onAction="#OnActionBtnAsociados" styleClass="mfx-BtnAsociados" stylesheets="@StyleTarea.css" text="Asociados">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic></MFXButton>
+               </children>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+   <styleClass>
+      <String fx:value="jfx-fondoUsuarios" />
+      <String fx:value="jfx-AnchorPane" />
+   </styleClass>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="1050.0" styleClass="jfx-BorderPaneAsociados" stylesheets="@StyleTarea.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.unaplanilla.controller.AsociadosController">
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="350.0" prefWidth="300.0" spacing="25.0" styleClass="jfx-stCarnet" stylesheets="@StyleTarea.css" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <ImageView fx:id="imgLogo" fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" styleClass="jfx-stCarnet" />
+            <Label fx:id="lbTextoEncabezado" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="300.0" styleClass="jfx-LabelCarnet" stylesheets="@StyleTarea.css" />
+            <MFXButton fx:id="btnRegistro" onAction="#OnActionBtnRegistro" styleClass="mfx-BtnRegistrar" stylesheets="@StyleTarea.css" text="Registro">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </MFXButton>
+            <MFXButton fx:id="btnEstadoCuentas" onAction="#OnActionBtnEstadoCuentas" styleClass="mfx-BtnEstadoCuenta" stylesheets="@StyleTarea.css" text="Estado de Cuenta">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </MFXButton>
+            <MFXButton fx:id="btnBuzonDepositos" onAction="#OnActionBtnBuzonDepositos" styleClass="mfx-BtnBuzon" stylesheets="@StyleTarea.css" text="Buzon de Depositos">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </MFXButton>
+            <MFXButton fx:id="btnJuego" layoutX="76.0" layoutY="392.0" onAction="#OnActionBtnJuego" styleClass="mfx-BtnJuego" stylesheets="@StyleTarea.css" text="Juego Aprendizaje ">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </MFXButton>
+            <MFXButton fx:id="btnSalir" onAction="#OnActionBtnSalir" styleClass="mfx-BtnSalir" stylesheets="@StyleTarea.css" text="Salir">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </MFXButton>
+         </children>
+         <padding>
+            <Insets left="10.0" top="20.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="188.0" prefWidth="387.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets top="30.0" />
+         </padding></VBox>
+   </center>
+</BorderPane>

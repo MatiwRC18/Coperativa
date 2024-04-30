@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="1050.0" styleClass="jfx-BorderPaneFuncionarios" stylesheets="@StyleTarea.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.unaplanilla.controller.FuncionariosController">
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="350.0" prefWidth="300.0" spacing="25.0" styleClass="jfx-stCarnet" stylesheets="@StyleTarea.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imgLogo" fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" styleClass="jfx-stCarnet" />
+            <Label fx:id="lbTextoEncabezado" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="300.0" styleClass="jfx-LabelCarnet" stylesheets="@StyleTarea.css" />
+            <MFXButton fx:id="btnMantenimientoAso" onAction="#OnActionBtnManteniminetoAso" styleClass="mfx-BtnMantenimientoAso" stylesheets="@StyleTarea.css" text="Mantenimineto Asociados">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </MFXButton>
+            <MFXButton fx:id="btnImpresionCarnet" layoutX="10.0" layoutY="88.0" onAction="#OnActionBtnImpresionCarnet" styleClass="mfx-BtnCarnet" stylesheets="@StyleTarea.css" text="Impresion Carnet">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </MFXButton>
+            <MFXButton fx:id="btnAperturaCuentas" layoutX="28.0" layoutY="120.0" onAction="#OnActionBtnAperturaCuentas" styleClass="mfx-BtnAgregar" stylesheets="@StyleTarea.css" text="Apertura Cuentas ">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </MFXButton>
+            <MFXButton fx:id="btnRetiroDepisito" layoutX="26.0" layoutY="153.0" onAction="#OnActionBtnRetiroDeposito" styleClass="mfx-BtnRetiroDep" stylesheets="@StyleTarea.css" text="Retiro y Deposito">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </MFXButton>
+            <MFXButton fx:id="btnSalir" layoutX="29.0" layoutY="207.0" onAction="#OnActionBtnSalir" styleClass="mfx-BtnSalir" stylesheets="@StyleTarea.css" text="Salir">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </MFXButton>
+         </children>
+         <padding>
+            <Insets left="10.0" top="20.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="188.0" prefWidth="387.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets top="30.0" />
+         </padding></VBox>
+   </center>
+</BorderPane>
